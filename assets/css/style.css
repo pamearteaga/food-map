@@ -28,7 +28,7 @@ h1 .glyphicon{
 .boton{
 	background-color: #d9534f;
 	color: white;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .red{
@@ -68,7 +68,7 @@ img{
 }
 
 .modal-dialog{
-	margin-top: 50px;
+	margin-top: 20px;
 	text-align: center;
 	padding: 0 10px;
 }
@@ -77,4 +77,7 @@ img{
    border: none;
 }
 
+.modal-footer{
+   padding: 0;
+}
 
