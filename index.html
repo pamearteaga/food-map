@@ -13,7 +13,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>Foodmap</title>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+<!-- loader -->
+	<div id="loader"></div>
+	<div style="display:none;" id="myDiv" class="animate-bottom">
+	  
+
+
 	<header><h1>F<span class="glyphicon glyphicon-apple red" aria-hidden="true"></span>od<span class="yellow">Map</span></h1></header>
 	<div class="container-fluid">
 		<div class="row">
@@ -28,11 +34,11 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<select id="options">
-					<option value="volvo">Seleccionar...</option>
-					<option value="volvo">China</option>
-				  <option value="saab">Venezolana</option>
-				  <option value="mercedes">Árabe</option>
-				  <option value="audi">Peruana</option>
+					<option value="">Seleccionar...</option>
+					<option value="china" class="peruana">China</option>
+				  <option value="venezolana" class="venezolana">Venezolana</option>
+				  <option value="arabe" class="arabe">Árabe</option>
+				  <option value="peruana" class="peruana">Peruana</option>
 				</select>
 			</div>
 		</div><!-- row -->
@@ -232,8 +238,20 @@
 </div> <!-- modal arabe-->
 
 
+	</div> <!-- loader -->
 
+<script>
+var myVar;
 
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 	
   <!-- js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
