@@ -1,32 +1,25 @@
 $(document).ready(function(){
 
-   //funcion filter
-    $('#options').select(function(){
-        var foodOption = $(this).val();
-        $('#food').hide();
+   $("#categorias").change(function() {
+    var foodOption = $(this).val();
+     $("#all").hide();
 
-        $('#food').each(function(){
-            var food = $(this).text();
-            if (food.indexOf(foodOption) != -1) {
-                $(this).show();
-            }
-        });
-
-
-    }); //funcion filter
-    
+      if(foodOption == "china"){
+         $('#chinafood').removeClass('hidden');
+         $('#venefood, #arabefood, #perufood').addClass('hidden');
+        }else if(foodOption == "venezolana"){
+            $('#venefood').removeClass('hidden');
+            $('#chinafood, #arabefood, #perufood ').addClass('hidden');
+        }else if(foodOption == "arabe"){
+            $('#arabefood').removeClass('hidden');
+            $('#venefood, #chinafood, #perufood').addClass('hidden');
+        }else if(foodOption == "peruana"){
+            $('#perufood').removeClass('hidden');
+            $('#venefood, #arabefood, #chinafood').addClass('hidden');
+        }else if(foodOption == "0"){
+            $('#all').show();
+            $('#venefood, #arabefood, #chinafood, #perufood').addClass('hidden');
+       };
+    });
 });
 
-/*
-$('#search').keyup(function(){
-        var nombreCont = $(this).val();
-        $('#contactos').hide();
-
-        $('#contactos').each(function(){
-            var search = $(this).text();
-            if (search.indexOf(nombreCont) != -1) {
-                $(this).show();
-            }
-        });
-
-        */

@@ -13,10 +13,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>Foodmap</title>
 </head>
-<body onload="myFunction()" style="margin:0;">
-<!-- loader -->
+<body>
+<!--<body onload="myFunction()" style="margin:0;">
+ loader 
 	<div id="loader"></div>
-	<div style="display:none;" id="myDiv" class="animate-bottom">
+	<div style="display:none;" id="myDiv" class="animate-bottom">-->
 	  
 
 
@@ -30,85 +31,168 @@
 			</div><!-- col -->
 		</div> <!-- row -->
 
-		<!-- opciones-->
+		<!-- categorias-->
 		<div class="row">
 			<div class="col-xs-12">
-				<select id="options">
-					<option value="">Seleccionar...</option>
-					<option value="china" class="peruana">China</option>
-				  <option value="venezolana" class="venezolana">Venezolana</option>
-				  <option value="arabe" class="arabe">Árabe</option>
-				  <option value="peruana" class="peruana">Peruana</option>
+				<select id="categorias">
+					<option value="0">Seleccionar...</option>
+					<option value="china">China</option>
+				  <option value="venezolana">Venezolana</option>
+				  <option value="arabe">Árabe</option>
+				  <option value="peruana">Peruana</option>
 				</select>
 			</div>
 		</div><!-- row -->
 	</div> <!-- container -->
 
-	<div id="food" class="container">
+	<div class="container">
+		<div id="all">
 		<div class="row">
-			<div class="col-xs-6 peruana">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/aji-gallina.jpg" data-toggle="modal" data-target="#peruana">
 			</div>
-			<div class="col-xs-6 venezolana">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/arepa.jpg" data-toggle="modal" data-target="#venezolana">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 china">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/arrollado.jpg" data-toggle="modal" data-target="#china">
 			</div>
-			<div class="col-xs-6 venezolana">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/cachapa.jpg" data-toggle="modal" data-target="#venezolana">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 peruana">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/causa-limena.jpg" data-toggle="modal" data-target="#peruana">
 			</div>
-			<div class="col-xs-6 peruana">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/ceviche.jpg" data-toggle="modal" data-target="#peruana">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 china">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/chopsuey.jpg" data-toggle="modal" data-target="#china">
 			</div>
-			<div class="col-xs-6 arabe">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/dulces-arabes.jpg" data-toggle="modal" data-target="#arabe">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 arabe">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/falafel.jpg" data-toggle="modal" data-target="#arabe">
 			</div>
-			<div class="col-xs-6 peruana">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/leche-tigre.jpg" data-toggle="modal" data-target="#peruana">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 venezolana">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/pabellon.jpg" data-toggle="modal" data-target="#venezolana">
 			</div>
-			<div class="col-xs-6 china">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/pollo-agridulce.jpg" data-toggle="modal" data-target="#china">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 venezolana">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/quesillo.jpg" data-toggle="modal" data-target="#venezolana">
 			</div>
-			<div class="col-xs-6 arabe">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/shawarma.jpg" data-toggle="modal" data-target="#arabe">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 arabe">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/tabule.jpg" data-toggle="modal" data-target="#arabe">
 			</div>
-			<div class="col-xs-6 china">
+			<div class="col-xs-6">
 				<img class="img-circle" src="assets/img/wantan.jpg" data-toggle="modal" data-target="#china">
 			</div>
 		</div>
+		</div><!-- all -->
+
+		<div id="chinafood" class="hidden">
+			<div class="row">
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/arrollado.jpg" data-toggle="modal" data-target="#china">
+			</div>
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/chopsuey.jpg" data-toggle="modal" data-target="#china">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/pollo-agridulce.jpg" data-toggle="modal" data-target="#china">
+			</div>
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/wantan.jpg" data-toggle="modal" data-target="#china">
+			</div>
+		</div>
+		</div><!-- china -->
+
+		<div id="venefood" class="hidden">
+			<div class="row">
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/arepa.jpg" data-toggle="modal" data-target="#venezolana">
+			</div>
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/cachapa.jpg" data-toggle="modal" data-target="#venezolana">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/pabellon.jpg" data-toggle="modal" data-target="#venezolana">
+			</div>
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/quesillo.jpg" data-toggle="modal" data-target="#venezolana">
+			</div>
+		</div>
+		
+		</div><!-- vene -->
+
+		<div id="arabefood" class="hidden">
+			<div class="row">
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/dulces-arabes.jpg" data-toggle="modal" data-target="#arabe">
+			</div>
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/falafel.jpg" data-toggle="modal" data-target="#arabe">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/tabule.jpg" data-toggle="modal" data-target="#arabe">
+			</div>
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/shawarma.jpg" data-toggle="modal" data-target="#arabe">
+			</div>
+		</div>
+			
+		</div><!-- arabe -->
+
+		<div id="perufood" class="hidden">
+			<div class="row">
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/aji-gallina.jpg" data-toggle="modal" data-target="#peruana">
+			</div>
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/causa-limena.jpg" data-toggle="modal" data-target="#peruana">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/leche-tigre.jpg" data-toggle="modal" data-target="#peruana">
+			</div>
+			<div class="col-xs-6">
+				<img class="img-circle" src="assets/img/ceviche.jpg" data-toggle="modal" data-target="#peruana">
+			</div>
+		</div>
+			
+		</div><!-- peru -->
+			
+
 	</div><!-- container -->
   
   <!-- modales comida-->
@@ -238,7 +322,7 @@
 </div> <!-- modal arabe-->
 
 
-	</div> <!-- loader -->
+	<!--</div>  loader 
 
 <script>
 var myVar;
@@ -251,7 +335,7 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
-</script>
+</script>-->
 	
   <!-- js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
