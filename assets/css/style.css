@@ -129,7 +129,11 @@ img{
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
-  display: none;
-  text-align: center;
+@media (max-width:374px) {
+	#loader {
+  
+  width:60%;
+ 
+}
+	
 }
