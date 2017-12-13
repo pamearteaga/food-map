@@ -13,13 +13,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>Foodmap</title>
 </head>
-<body>
-<!--<body onload="myFunction()" style="margin:0;">
- loader 
-	<div id="loader"></div>
-	<div style="display:none;" id="myDiv" class="animate-bottom">-->
-	  
-
+<body onload="splash()">
+<div id="loader"><h1>F<span class="glyphicon glyphicon-apple red" aria-hidden="true"></span>od<span class="yellow">Map</span></h1><</div>
+<div id="content" class="deslizar hidden">
 
 	<header><h1>F<span class="glyphicon glyphicon-apple red" aria-hidden="true"></span>od<span class="yellow">Map</span></h1></header>
 	<div class="container-fluid">
@@ -30,7 +26,7 @@
 				</div><!-- map -->
 			</div><!-- col -->
 		</div> <!-- row -->
-
+  
 		<!-- categorias-->
 		<div class="row">
 			<div class="col-xs-12">
@@ -44,6 +40,8 @@
 			</div>
 		</div><!-- row -->
 	</div> <!-- container -->
+
+
 
 	<div class="container">
 		<div id="all">
@@ -322,20 +320,8 @@
 </div> <!-- modal arabe-->
 
 
-	<!--</div>  loader 
+</div>  <!--loader-->
 
-<script>
-var myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage, 2000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>-->
 	
   <!-- js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

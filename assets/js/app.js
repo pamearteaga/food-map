@@ -1,8 +1,22 @@
+//loader
+var time;
+
+function splash() {
+  time = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  $("#loader").addClass('hidden');
+  $("#content").removeClass('hidden').addClass('show');
+}
+
+
+
 $(document).ready(function(){
 
-   $("#categorias").change(function() {
-    var foodOption = $(this).val();
-     $("#all").hide();
+  $("#categorias").change(function() {
+   var foodOption = $(this).val();
+    $("#all").hide();
 
       if(foodOption == "china"){
          $('#chinafood').removeClass('hidden');
