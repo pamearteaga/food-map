@@ -2,7 +2,7 @@
 var time;
 
 function splash() {
-  time = setTimeout(showPage, 1000);
+  time = setTimeout(showPage, 2000);
 }
 
 function showPage() {
