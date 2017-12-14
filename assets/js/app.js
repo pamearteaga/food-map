@@ -15,7 +15,7 @@ function showPage() {
 $(document).ready(function(){
 /*filtro categorias*/
   $("#categorias").change(function() {
-   var foodOption = x
+   var foodOption = $(this).val();
     $("#all").hide();
   if(foodOption == "china"){
      $('#chinafood').removeClass('hidden');
