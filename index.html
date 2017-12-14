@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<!-- Latest compiled and minified CSS -->
+  <meta charset="UTF-8">
+  <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -11,215 +11,214 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<title>Foodmap</title>
+  <title>Foodmap</title>
 </head>
 <body onload="splash()">
-	<!-- loader-->
+  <!-- loader-->
 <div id="loader"><h1>F<span class="glyphicon glyphicon-apple red" aria-hidden="true"></span>od<span class="yellow">Map</span></h1></div>
 <div id="content" class="deslizar hidden">
 
-	<header><h1>F<span class="glyphicon glyphicon-apple red" aria-hidden="true"></span>od<span class="yellow">Map</span></h1></header>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div><!-- map -->
-			</div><!-- col -->
-		</div> <!-- row -->
+  <header><h1>F<span class="glyphicon glyphicon-apple red" aria-hidden="true"></span>od<span class="yellow">Map</span></h1></header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+       <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div><!-- map -->
+      </div><!-- col -->
+    </div> <!-- row -->
   
-		<!-- categorias-->
-		<div class="row">
-			<div class="col-xs-12">
-				<select id="categorias">
-					<option value="0">Seleccionar...</option>
-					<option value="china">China</option>
-				  <option value="venezolana">Venezolana</option>
-				  <option value="arabe">Árabe</option>
-				  <option value="peruana">Peruana</option>
-				</select>
-			</div>
-		</div><!-- row -->
-	</div> <!-- container -->
+    <!-- categorias-->
+    <div class="row">
+      <div class="col-xs-12">
+        <select id="categorias">
+          <option value="0">Seleccionar...</option>
+          <option value="china">China</option>
+          <option value="arabe">Árabe</option>
+          <option value="peruana">Peruana</option>
+        </select>
+      </div>
+    </div><!-- row -->
+  </div> <!-- container -->
 
 
+<!-- toda la comida-->
+  <div class="container">
+    <div id="all">
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/aji-gallina.jpg" data-toggle="modal" data-target="#peruana">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/arepa.jpg" data-toggle="modal" data-target="#venezolana">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/arrollado.jpg" data-toggle="modal" data-target="#china">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/cachapa.jpg" data-toggle="modal" data-target="#venezolana">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/causa-limena.jpg" data-toggle="modal" data-target="#peruana">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/ceviche.jpg" data-toggle="modal" data-target="#peruana">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/chopsuey.jpg" data-toggle="modal" data-target="#china">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/dulces-arabes.jpg" data-toggle="modal" data-target="#arabe">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/falafel.jpg" data-toggle="modal" data-target="#arabe">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/leche-tigre.jpg" data-toggle="modal" data-target="#peruana">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/pabellon.jpg" data-toggle="modal" data-target="#venezolana">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/pollo-agridulce.jpg" data-toggle="modal" data-target="#china">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/quesillo.jpg" data-toggle="modal" data-target="#venezolana">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/shawarma.jpg" data-toggle="modal" data-target="#arabe">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/tabule.jpg" data-toggle="modal" data-target="#arabe">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/wantan.jpg" data-toggle="modal" data-target="#china">
+      </div>
+    </div>
+    </div><!-- all -->
 
-	<div class="container">
-		<div id="all">
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/aji-gallina.jpg" data-toggle="modal" data-target="#peruana">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/arepa.jpg" data-toggle="modal" data-target="#venezolana">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/arrollado.jpg" data-toggle="modal" data-target="#china">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/cachapa.jpg" data-toggle="modal" data-target="#venezolana">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/causa-limena.jpg" data-toggle="modal" data-target="#peruana">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/ceviche.jpg" data-toggle="modal" data-target="#peruana">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/chopsuey.jpg" data-toggle="modal" data-target="#china">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/dulces-arabes.jpg" data-toggle="modal" data-target="#arabe">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/falafel.jpg" data-toggle="modal" data-target="#arabe">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/leche-tigre.jpg" data-toggle="modal" data-target="#peruana">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/pabellon.jpg" data-toggle="modal" data-target="#venezolana">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/pollo-agridulce.jpg" data-toggle="modal" data-target="#china">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/quesillo.jpg" data-toggle="modal" data-target="#venezolana">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/shawarma.jpg" data-toggle="modal" data-target="#arabe">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/tabule.jpg" data-toggle="modal" data-target="#arabe">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/wantan.jpg" data-toggle="modal" data-target="#china">
-			</div>
-		</div>
-		</div><!-- all -->
+    <div id="chinafood" class="hidden">
+      <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/arrollado.jpg" data-toggle="modal" data-target="#china">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/chopsuey.jpg" data-toggle="modal" data-target="#china">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/pollo-agridulce.jpg" data-toggle="modal" data-target="#china">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/wantan.jpg" data-toggle="modal" data-target="#china">
+      </div>
+    </div>
+    </div><!-- china -->
 
-		<div id="chinafood" class="hidden">
-			<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/arrollado.jpg" data-toggle="modal" data-target="#china">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/chopsuey.jpg" data-toggle="modal" data-target="#china">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/pollo-agridulce.jpg" data-toggle="modal" data-target="#china">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/wantan.jpg" data-toggle="modal" data-target="#china">
-			</div>
-		</div>
-		</div><!-- china -->
+    <div id="venefood" class="hidden">
+      <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/arepa.jpg" data-toggle="modal" data-target="#venezolana">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/cachapa.jpg" data-toggle="modal" data-target="#venezolana">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/pabellon.jpg" data-toggle="modal" data-target="#venezolana">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/quesillo.jpg" data-toggle="modal" data-target="#venezolana">
+      </div>
+    </div>
 
-		<div id="venefood" class="hidden">
-			<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/arepa.jpg" data-toggle="modal" data-target="#venezolana">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/cachapa.jpg" data-toggle="modal" data-target="#venezolana">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/pabellon.jpg" data-toggle="modal" data-target="#venezolana">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/quesillo.jpg" data-toggle="modal" data-target="#venezolana">
-			</div>
-		</div>
-		
-		</div><!-- vene -->
+    </div><!-- vene -->
 
-		<div id="arabefood" class="hidden">
-			<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/dulces-arabes.jpg" data-toggle="modal" data-target="#arabe">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/falafel.jpg" data-toggle="modal" data-target="#arabe">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/tabule.jpg" data-toggle="modal" data-target="#arabe">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/shawarma.jpg" data-toggle="modal" data-target="#arabe">
-			</div>
-		</div>
-			
-		</div><!-- arabe -->
+    <div id="arabefood" class="hidden">
+      <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/dulces-arabes.jpg" data-toggle="modal" data-target="#arabe">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/falafel.jpg" data-toggle="modal" data-target="#arabe">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/tabule.jpg" data-toggle="modal" data-target="#arabe">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/shawarma.jpg" data-toggle="modal" data-target="#arabe">
+      </div>
+    </div>
 
-		<div id="perufood" class="hidden">
-			<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/aji-gallina.jpg" data-toggle="modal" data-target="#peruana">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/causa-limena.jpg" data-toggle="modal" data-target="#peruana">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/leche-tigre.jpg" data-toggle="modal" data-target="#peruana">
-			</div>
-			<div class="col-xs-6">
-				<img class="img-circle" src="assets/img/ceviche.jpg" data-toggle="modal" data-target="#peruana">
-			</div>
-		</div>
-			
-		</div><!-- peru -->
-			
+    </div><!-- arabe -->
 
-	</div><!-- container -->
+    <div id="perufood" class="hidden">
+      <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/aji-gallina.jpg" data-toggle="modal" data-target="#peruana">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/causa-limena.jpg" data-toggle="modal" data-target="#peruana">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/leche-tigre.jpg" data-toggle="modal" data-target="#peruana">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-circle" src="assets/img/ceviche.jpg" data-toggle="modal" data-target="#peruana">
+      </div>
+    </div>
+
+    </div><!-- peru -->
+
+
+  </div><!-- container -->
   
   <!-- modales comida-->
   <!-- modal china-->
-	<div id="china" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div id="china" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h3 class="modal-title">Restaurant Chino</h3>
       </div>
-	      <div class="modal-body">
-	      	<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-				  </div><!-- map -->
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
-				  <h4>Av. Siempreviva 1234</h4>
-				  <p>Rango: $$$ - $$$$</p>
-				  <p>Delivery: Sí</p>
-				  <p>Teléfono: +56 2 12345668</p>
-				  <p>Mail: comidachina@gmail.com</p>
+        <div class="modal-body">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div><!-- map -->
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
+          <h4>Av. Siempreviva 1234</h4>
+          <p>Rango: $$$ - $$$$</p>
+          <p>Delivery: Sí</p>
+          <p>Teléfono: +56 2 12345668</p>
+          <p>Mail: comidachina@gmail.com</p>
        </div> <!-- modal body -->
       <div class="modal-footer">
-      	<div align="center">
+        <div align="center">
         <button type="button" class="btn boton" data-dismiss="modal">Pedir ahora</button>
         </div>
       </div>
@@ -227,30 +226,30 @@
   </div>
 </div> <!-- modal china-->
  <!-- modal venezolana-->
-	<div id="venezolana" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div id="venezolana" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h3 class="modal-title">Restaurant Venezolano</h3>
       </div>
-	      <div class="modal-body">
-	      	<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-				  </div><!-- map -->
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <h4>Av. La Entrada 1234</h4>
-				  <p>Rango: $$$$ - $$$$</p>
-				  <p>Delivery: Sí</p>
-				  <p>Teléfono: +56 2 12345668</p>
-				  <p>Mail: comidavenezolana@gmail.com</p>
+        <div class="modal-body">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div><!-- map -->
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <h4>Av. La Entrada 1234</h4>
+          <p>Rango: $$$$ - $$$$</p>
+          <p>Delivery: Sí</p>
+          <p>Teléfono: +56 2 12345668</p>
+          <p>Mail: comidavenezolana@gmail.com</p>
        </div> <!-- modal body -->
       <div class="modal-footer">
-      	<div align="center">
+        <div align="center">
         <button type="button" class="btn boton" data-dismiss="modal">Pedir ahora</button>
         </div>
       </div>
@@ -258,30 +257,30 @@
   </div>
 </div> <!-- modal venezolana-->
  <!-- modal arabe-->
-	<div id="arabe" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div id="arabe" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h3 class="modal-title">Restaurant Árabe</h3>
       </div>
-	      <div class="modal-body">
-	      	<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-				  </div><!-- map -->
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
-				  <h4>Av. Irarrázabal 1234</h4>
-				  <p>Rango: $$$$ - $$$$</p>
-				  <p>Delivery: No</p>
-				  <p>Teléfono: +56 2 12345668</p>
-				  <p>Mail: comidaarabe@gmail.com</p>
+        <div class="modal-body">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div><!-- map -->
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
+          <h4>Av. Irarrázabal 1234</h4>
+          <p>Rango: $$$$ - $$$$</p>
+          <p>Delivery: No</p>
+          <p>Teléfono: +56 2 12345668</p>
+          <p>Mail: comidaarabe@gmail.com</p>
        </div> <!-- modal body -->
       <div class="modal-footer">
-      	<div align="center">
+        <div align="center">
         <button type="button" class="btn boton" data-dismiss="modal">Pedir ahora</button>
         </div>
       </div>
@@ -289,30 +288,30 @@
   </div>
 </div> <!-- modal arabe-->
 <!-- modal peruana-->
-	<div id="peruana" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div id="peruana" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h3 class="modal-title">Restaurant Peruano</h3>
       </div>
-	      <div class="modal-body">
-	      	<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-				  </div><!-- map -->
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
-				  <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
-				  <h4>Av. Recoleta 1234</h4>
-				  <p>Rango: $$$ - $$$$$</p>
-				  <p>Delivery: No</p>
-				  <p>Teléfono: +56 2 12345668</p>
-				  <p>Mail: comidaperuana@gmail.com</p>
+        <div class="modal-body">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15726.740262369143!2d-70.67637261094427!3d-33.4457699188896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1513091435640" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div><!-- map -->
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-star-empty yellow" aria-hidden="true"></span>
+          <h4>Av. Recoleta 1234</h4>
+          <p>Rango: $$$ - $$$$$</p>
+          <p>Delivery: No</p>
+          <p>Teléfono: +56 2 12345668</p>
+          <p>Mail: comidaperuana@gmail.com</p>
        </div> <!-- modal body -->
       <div class="modal-footer">
-      	<div align="center">
+        <div align="center">
         <button type="button" class="btn boton" data-dismiss="modal">Pedir ahora</button>
         </div>
       </div>
@@ -321,12 +320,12 @@
 </div> <!-- modal arabe-->
 
 
-</div>  <!--loader-->
+</div> <!--loader-->
 
-	
-  <!-- js -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- Mi js -->
-  <script type="text/javascript" src="assets/js/app.js"></script>
+
+<!-- js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Mi js -->
+<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
